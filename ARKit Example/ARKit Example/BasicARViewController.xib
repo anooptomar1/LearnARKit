@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13122.19" systemVersion="16E195" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.16"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="BasicARViewController" customModule="ARKit_Example" customModuleProvider="target">
+            <connections>
+                <outlet property="secenView" destination="K5R-Wy-5u3" id="je3-1s-XgU"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <arscnView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="K5R-Wy-5u3">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                </arscnView>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="u5n-Rl-jTU">
+                    <rect key="frame" x="311" y="603" width="44" height="44"/>
+                    <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="44" id="8P7-NR-V8S"/>
+                        <constraint firstAttribute="width" constant="44" id="b6g-e6-r1f"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                    <state key="normal" title="back">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="titleShadowColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                            <integer key="value" value="4"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                    <connections>
+                        <action selector="backToMain:" destination="-1" eventType="touchUpInside" id="fxa-zQ-MSh"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="K5R-Wy-5u3" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="4o5-4q-L9i"/>
+                <constraint firstAttribute="bottom" secondItem="K5R-Wy-5u3" secondAttribute="bottom" id="HbE-QT-2Ps"/>
+                <constraint firstAttribute="trailing" secondItem="K5R-Wy-5u3" secondAttribute="trailing" id="MF6-Td-HGe"/>
+                <constraint firstAttribute="bottom" secondItem="u5n-Rl-jTU" secondAttribute="bottom" constant="20" id="Uge-YJ-qy6"/>
+                <constraint firstItem="K5R-Wy-5u3" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="oMS-7Y-TRc"/>
+                <constraint firstAttribute="trailing" secondItem="u5n-Rl-jTU" secondAttribute="trailing" constant="20" id="s5y-D0-fYx"/>
+            </constraints>
+        </view>
+    </objects>
+</document>
